@@ -3,21 +3,21 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     [SerializeField] private GameObject lineCreator;
-    static public float inkAmount = 100;
-    private int currentColor = 0;
-    static public float currentPrice = 10;
+    GameObject currentCreator;
+    public static bool onAllowedPosition = false;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && inkAmount > 0)
+        Debug.Log(InkManager.inkAmount);
+        if (Input.GetMouseButtonDown(0) && InkManager.inkAmount > 0 && onAllowedPosition)
         {
-            CreateLineCreator(currentColor);
+            CreateLineCreator(InkManager.currentColor);
         }
     }
 
     private void CreateLineCreator(int collor)
     {
-        var obj = Instantiate(lineCreator);
-        obj.GetComponent<DrowLine>().startPos = GetWorldPosition(Input.mousePosition);
+        currentCreator = Instantiate(lineCreator);
+        currentCreator.GetComponent<DrowLine>().startPos = GetWorldPosition(Input.mousePosition);
     }
     public static Vector2 GetWorldPosition(Vector3 mousePosition)
     {
