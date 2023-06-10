@@ -13,7 +13,7 @@ public class GameSceneManager : MonoCache
     public Pet[] pet;
     private NavMeshSurface Surface2D;
 
-    public int remainingTime = 7;
+    public int remainingTime = 10;
     private void Awake()
     {
         InkManager.inkAmount = 200;
@@ -30,6 +30,7 @@ public class GameSceneManager : MonoCache
         onGameStart.Invoke();
         Time.timeScale = 1;
         StartCoroutine(TimeCheck());
+        StartCoroutine(Check(0.01f));
         NavUptdate();
     }
     
@@ -45,6 +46,8 @@ public class GameSceneManager : MonoCache
     private void Win()
     {
         onGameEnd(true);
+        PlayerPrefs.SetInt("LastLevel",PlayerPrefs.GetInt("LastLevel")+1);    
+
         SoundManager.Instance.PlaySound(SoundManager.SoundType.WinSound);
     }
     public void NavUptdate()
@@ -54,7 +57,8 @@ public class GameSceneManager : MonoCache
 
     public void Lose()
     {
-        onGameEnd(false);
+        //onGameEnd(false);
+        Reload();
         SoundManager.Instance.PlaySound(SoundManager.SoundType.LoseSound);
 
     }
@@ -71,6 +75,8 @@ public class GameSceneManager : MonoCache
     public void ToMenu()
     {
         SceneManager.LoadScene(0);
+        MusicManager.Instance.PlayMusic(MusicManager.MusicType.MainMenuMusic);
+
     }
 
     public void SkipLevel()
@@ -81,5 +87,12 @@ public class GameSceneManager : MonoCache
     private void Stop(bool a)
     {
         Time.timeScale = 0;
+    }
+    private IEnumerator Check(float time)
+    {
+        yield return new WaitForSeconds(time);
+        NavUptdate();
+        StartCoroutine(Check(0.5f));
+
     }
 }

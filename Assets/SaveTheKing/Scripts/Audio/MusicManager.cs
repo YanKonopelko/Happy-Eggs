@@ -1,36 +1,37 @@
-using System.Collections;
 using NTC.Global.System;
 using UnityEngine;
 using Plugins.Audio.Core;
 
-[RequireComponent(typeof(AudioSource))]
 public class MusicManager : Singleton<MusicManager>
 {
-    
-    private AudioSource _audioSource;
+    public enum MusicType { MainMenuMusic = 0, InGameMusic };
+
     private SourceAudio _sourceAudio;
     public float volume = 0.1f;
 
+    [SerializeField]private float volumeK = 0.7f;
+
     void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
         _sourceAudio = GetComponent<SourceAudio>();
         volume = (PlayerPrefs.HasKey("MUSIC_VOLUME")) ? PlayerPrefs.GetFloat("MUSIC_VOLUME") : volume;
-        _audioSource.volume = volume;
-        //_sourceAudio.Play("MainMusic");
-        DontDestroyOnLoad(transform.gameObject);
-        StartCoroutine(PlayMusic());
+        volume *= volumeK;
 
+        _sourceAudio.Volume = volume;
+        DontDestroyOnLoad(transform.gameObject);
+        PlayMusic(MusicType.MainMenuMusic);
     }
     
     public void ChangeVolume(float newVolume)
     {
         volume = newVolume;
-        _audioSource.volume = volume;
+        volume *= volumeK;
+        _sourceAudio.Volume = volume;
+
     }
-    private IEnumerator PlayMusic()
+    public void PlayMusic(MusicType type)
     {
-        yield return new WaitForSeconds(0.2f);
-        _sourceAudio.Play("MainMusic");
+        _sourceAudio.Play(type.ToString());
+        _sourceAudio.Loop = true;
     }
 }

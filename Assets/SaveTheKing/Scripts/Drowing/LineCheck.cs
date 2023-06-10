@@ -8,22 +8,6 @@ public class LineCheck :MonoBehaviour
     {
         _transform = transform;
         lastPos = _transform.position;
-        StartCoroutine(Check(0.01f));
     }
-    private IEnumerator Check(float time)
-    {
-        yield return new WaitForSeconds(time);
-        if (lastPos == _transform.position)
-        {
-            lastPos = _transform.position;
-            GameSceneManager.instanse.NavUptdate();
-            StartCoroutine(Check(0.01f));
-        }
-        else
-        {
-            GameSceneManager.instanse.NavUptdate();
-            StartCoroutine(Check(0.05f));
-
-        }
-    }
+    
 }

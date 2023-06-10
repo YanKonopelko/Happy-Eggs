@@ -7,11 +7,13 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         YandexGame.Instance._FullscreenShow();
+        
     }
 
     public void StartLastLevel()
     {
         LevelManager.instance.Reload();
+        MusicManager.Instance.PlayMusic(MusicManager.MusicType.InGameMusic);
     }
 
     public void ToSettings()

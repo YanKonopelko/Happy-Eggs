@@ -11,21 +11,16 @@ public class SoundManager : Singleton<SoundManager>
     private SourceAudio _sourceAudio;
 
     public int sourceAmount = 3;
-
-    public AudioClip EnemySound;
-    public AudioClip ButtonSound;
-    public AudioClip SliderSound;
-    public AudioClip LoseSound;
-    public AudioClip WinSound;
-
-    public  float volume = 0.4f;
     
+    public  float volume = 0.4f;
+    [SerializeField]private float volumeK = 0.7f;
+ 
     private void Start()
     {
         _sourceAudio = GetComponent<SourceAudio>();
 
         volume = (PlayerPrefs.HasKey("VFX_VOLUME")) ? PlayerPrefs.GetFloat("VFX_VOLUME") : volume;
-
+        volume *= volumeK;
         for (int i = 0; i < sourceAmount; i++)
         {
             source.Add(gameObject.AddComponent<AudioSource>());
@@ -39,6 +34,8 @@ public class SoundManager : Singleton<SoundManager>
     public  void ChangeVolume(float newVolume)
     {
         volume = newVolume;
+        volume *= volumeK;
+
         foreach (AudioSource aso in source)
         {
             aso.volume = volume;

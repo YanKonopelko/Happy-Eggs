@@ -9,7 +9,7 @@ public class InputManager : MonoCache
     static private bool isMouse;
 
     public static bool isOnAllowed = true;
-    protected override void Run()
+    /*protected override void Run()
     {
         if ( InkManager.inkAmount > 0  && isOnAllowed)
         {
@@ -21,7 +21,7 @@ public class InputManager : MonoCache
                 return;
             CreateLineCreator(InkManager.currentColor);
         }    
-    }
+    }*/
 
     private void CreateLineCreator(int color)
     {

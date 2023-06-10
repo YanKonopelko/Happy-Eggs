@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b279d991f5939884fb1767a0076c31d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 22
+  force: 10
   random_point_radius: 1
   player: {fileID: 0}
   near_player_prefab: {fileID: 4418991418253986163, guid: 2a49dde96303d8c40a97f193fafe7a9b, type: 3}
@@ -65,7 +65,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 15
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0

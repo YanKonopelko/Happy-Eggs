@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Audio Database
   m_EditorClassIdentifier: 
   _items:
-  - Clip: {fileID: 8300000, guid: 82fb3cb8b495e1245ab46bb4da664a9e, type: 3}
-    Key: MainMusic
+  - Clip: {fileID: 8300000, guid: 5fc373bdbbb9be3489b635f51a3c6459, type: 3}
+    Key: MainMenuMusic
     FolderPath: SaveTheKing\Audio\
-    Name: "BrushHit_Assets_Music_\u041C\u0435\u043B\u043E\u0434\u0438\u0447\u043D\u0430\u044F
-      \u0431\u0435\u0437 \u0441\u043B\u043E\u0432 \u0444\u043E\u043B\u043A - Copy.mp3"
+    Name: MainMenu.mp3
     Preload: 1
     _id: 112e7850-4513-49f2-a64d-3db60b0535b0
   - Clip: {fileID: 8300000, guid: e3734af518a28d3418848e455eb19c59, type: 3}
@@ -50,3 +49,9 @@ MonoBehaviour:
     Name: LoseSound.mp3
     Preload: 1
     _id: 7dbbb554-c8b0-4aa2-90fe-0f1a40ad9f77
+  - Clip: {fileID: 0}
+    Key: 
+    FolderPath: 
+    Name: 
+    Preload: 1
+    _id: 323f1e90-a9cc-4926-8952-ba4d752e88a9

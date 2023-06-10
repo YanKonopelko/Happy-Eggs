@@ -53,11 +53,6 @@ public class Enemy : MonoCache
     {
         if (col.gameObject.CompareTag("Pet"))
             col.gameObject.GetComponent<Pet>().Lose();
-        if (col.gameObject.GetComponent<DrowLine>() != null)
-        {
-            col.gameObject.GetComponent<Rigidbody2D>().AddForce(force*rb.velocity.normalized,ForceMode2D.Impulse);
-            rb.AddForce(-1*(force/2*rb.velocity.normalized),ForceMode2D.Impulse);
-        }
     }
     
     public void Death()
