@@ -33,5 +33,8 @@ public class Bomb : MonoBehaviour
             col.gameObject.GetComponent<Pet>().Lose();
         if(col.gameObject.CompareTag("Enemy"))
             col.gameObject.GetComponent<Enemy>().Death();
+                //if(col.gameObject.CompareTag("Land"))
+            //(col.gameObject.GetComponent<Land>().isDestoyed)
+             //   col.gameObject.GetComponent<Land>().SelfDestroy();
     }
 }

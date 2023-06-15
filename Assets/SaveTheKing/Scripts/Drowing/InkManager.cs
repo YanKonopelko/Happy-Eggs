@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class InkManager : MonoBehaviour
 {
-    static public float inkAmount = 100;
+    static public float inkAmount = 10;
     static public int currentColor = 0;
-    static public float currentPrice = 0.05f;
+    static public float currentPrice = 0.3f;
     
 }

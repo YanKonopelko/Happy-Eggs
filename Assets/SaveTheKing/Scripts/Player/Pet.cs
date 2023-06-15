@@ -3,7 +3,7 @@ using UnityEngine;
 public class Pet : MonoBehaviour
 {
     [SerializeField] private Sprite[] Skins;
-    [SerializeField] private Animation anim;
+    //[SerializeField] private Animation anim;
     void Awake()
     {
         var sprite = GetComponent<Sprite>();

@@ -49,9 +49,9 @@ MonoBehaviour:
     Name: LoseSound.mp3
     Preload: 1
     _id: 7dbbb554-c8b0-4aa2-90fe-0f1a40ad9f77
-  - Clip: {fileID: 0}
-    Key: 
-    FolderPath: 
-    Name: 
+  - Clip: {fileID: 8300000, guid: 0d80e33e8fdc79f49bcf7c57f550be5b, type: 3}
+    Key: InGameMusic
+    FolderPath: SaveTheKing\Audio\
+    Name: InGame.mp3
     Preload: 1
     _id: 323f1e90-a9cc-4926-8952-ba4d752e88a9

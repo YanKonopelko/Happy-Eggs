@@ -339,6 +339,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 521520859}
     m_Modifications:
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: en
+      value: Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: ru
+      value: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: text
+      value: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: countLang
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: processTranslateLabel
+      value: 1/3
+      objectReference: {fileID: 0}
     - target: {fileID: 8095636418401762748, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1006,8 +1026,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010230520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3348, y: -0.8851, z: 0}
-  m_LocalScale: {x: 0.19770083, y: 0.15144, z: 1}
+  m_LocalPosition: {x: -1.86, y: -0.76, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1681,6 +1701,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLipsLength
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLips.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5fc373bdbbb9be3489b635f51a3c6459, type: 3}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d80e33e8fdc79f49bcf7c57f550be5b, type: 3}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLipsLength.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLipsLength.Array.data[0]
+      value: 33.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: CLipsLength.Array.data[1]
+      value: 22.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: MusicDurations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: MusicDurations.Array.data[0]
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118600733612814586, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
+      propertyPath: MusicDurations.Array.data[1]
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5118600733612814587, guid: 287a10f25c2a6b64eb3380d28e22ff31, type: 3}
       propertyPath: Loop
       value: 0
@@ -1707,6 +1767,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 521520859}
     m_Modifications:
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: en
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: ru
+      value: "\u041D\u0430\u0447\u0438\u043D\u0430\u0442\u044C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: text
+      value: "\u0421\u0442\u0430\u0440\u0442"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: countLang
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944850567975180503, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
+      propertyPath: processTranslateLabel
+      value: 1/3
+      objectReference: {fileID: 0}
     - target: {fileID: 8095636418401762748, guid: 3ea66b6ee9ebd8248a458e8f933f2699, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

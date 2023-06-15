@@ -2659,6 +2659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1373127733974012431, guid: 7fbdfd0c358b1ee489e07132e9cd1f86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.02
+      objectReference: {fileID: 0}
     - target: {fileID: 4239720176609961792, guid: 7fbdfd0c358b1ee489e07132e9cd1f86, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2736,6 +2740,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1172134648}
+    - target: {fileID: 8273835034849487105, guid: 8fdbe2bf5dbf12d4895a035a24ea5c36, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273835034849487167, guid: 8fdbe2bf5dbf12d4895a035a24ea5c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8273835035978872059, guid: 8fdbe2bf5dbf12d4895a035a24ea5c36, type: 3}
       propertyPath: m_Name
       value: Game Canvas

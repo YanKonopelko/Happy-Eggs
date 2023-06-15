@@ -2650,6 +2650,14 @@ PrefabInstance:
       propertyPath: losePanel
       value: 
       objectReference: {fileID: 1932177509}
+    - target: {fileID: 3648243199902108640, guid: 0b789679c9e76b3478db5138b62ae66d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648243199902108640, guid: 0b789679c9e76b3478db5138b62ae66d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b789679c9e76b3478db5138b62ae66d, type: 3}
 --- !u!1001 &4239720176937537373
@@ -2740,6 +2748,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1172134648}
+    - target: {fileID: 8273835035814369830, guid: 8fdbe2bf5dbf12d4895a035a24ea5c36, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 331
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273835035814369830, guid: 8fdbe2bf5dbf12d4895a035a24ea5c36, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 277
+      objectReference: {fileID: 0}
     - target: {fileID: 8273835035978872059, guid: 8fdbe2bf5dbf12d4895a035a24ea5c36, type: 3}
       propertyPath: m_Name
       value: Game Canvas

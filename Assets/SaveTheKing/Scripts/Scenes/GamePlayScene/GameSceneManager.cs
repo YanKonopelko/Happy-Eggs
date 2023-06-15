@@ -4,6 +4,7 @@ using NavMeshPlus.Components;
 using NTC.Global.Cache;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class GameSceneManager : MonoCache
 {
@@ -57,12 +58,23 @@ public class GameSceneManager : MonoCache
 
     public void Lose()
     {
-        //onGameEnd(false);
-        Reload();
+        onGameEnd(false);
+        //Reload();
         SoundManager.Instance.PlaySound(SoundManager.SoundType.LoseSound);
-
     }
 
+
+    protected override void OnEnabled()
+    {
+        YandexGame.RewardVideoEvent += Skip;
+    }
+
+    protected override void OnDisabled()
+    {
+        YandexGame.RewardVideoEvent -= Skip;
+    }
+
+    
     public void ToNextLevel()
     {
         LevelManager.instance.NextLevel();
@@ -75,15 +87,21 @@ public class GameSceneManager : MonoCache
     public void ToMenu()
     {
         SceneManager.LoadScene(0);
-        MusicManager.Instance.PlayMusic(MusicManager.MusicType.MainMenuMusic);
+        MusicManager.Instance.ChangeMusic(MusicManager.MusicType.MainMenuMusic);
 
     }
 
     public void SkipLevel()
     {
-        LevelManager.instance.SkipLevel();
+        Debug.Log("A");
+        YandexGame.Instance._RewardedShow(0);
+        //YandexGame.RewVideoShow(0);
     }
 
+    private void Skip(int a = 0)
+    {
+        LevelManager.instance.SkipLevel();
+    }
     private void Stop(bool a)
     {
         Time.timeScale = 0;

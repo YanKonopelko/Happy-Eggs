@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3648243199097549610}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3648243199455877190}
   - component: {fileID: 3648243199455877193}
   - component: {fileID: 3648243199455877192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameSceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3648243199631134223}
   - component: {fileID: 3648243199631134222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UI Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 3648243199741479839}
   - component: {fileID: 3648243199741479836}
   - component: {fileID: 3648243199741479808}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LinesDrawer
       objectReference: {fileID: 0}
+    - target: {fileID: 262275233512687037, guid: ee6dd88ca86508144b498025a3225797, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6dd88ca86508144b498025a3225797, type: 3}
 --- !u!4 &3531631567670912523 stripped
@@ -363,11 +367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5247741060968537367, guid: 124444a6b36122642906c65425a680ad, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.881
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5247741060968537367, guid: 124444a6b36122642906c65425a680ad, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5247741060968537367, guid: 124444a6b36122642906c65425a680ad, type: 3}
       propertyPath: m_LocalScale.z

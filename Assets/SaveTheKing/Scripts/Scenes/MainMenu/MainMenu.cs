@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     public void StartLastLevel()
     {
         LevelManager.instance.Reload();
-        MusicManager.Instance.PlayMusic(MusicManager.MusicType.InGameMusic);
+        MusicManager.Instance.ChangeMusic(MusicManager.MusicType.InGameMusic);
     }
 
     public void ToSettings()

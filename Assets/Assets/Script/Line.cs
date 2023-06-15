@@ -52,14 +52,11 @@ public class Line : MonoBehaviour
             var lastPos = GetLastPoint();
             Vector2 point = lastPos;
             fix = FixPos(lastPos);
-            Debug.Log(fix);
-            Debug.Log(lastPos);
 
             if ( (lastPos.x < newPoint.x && fix.x == 1) || (lastPos.x > newPoint.x && fix.x == -1) || fix.x == 0  )
                 point.x = newPoint.x;
             if ( (lastPos.y < newPoint.y && fix.y == 1) || (lastPos.y > newPoint.y && fix.y == -1) || fix.y == 0 )
                 point.y = newPoint.y;
-            Debug.Log(point);
 
             if (lastPos == point || fix == new Vector2(2,2)) return;
             
@@ -67,7 +64,7 @@ public class Line : MonoBehaviour
             newPoint = point;
         }
         
-        //InkManager.inkAmount -= InkManager.currentPrice;
+        InkManager.inkAmount -= InkManager.currentPrice;
 
         
         points.Add(newPoint);
@@ -87,7 +84,7 @@ public class Line : MonoBehaviour
     public void EndLine(float LineWidth)
     {
         edgeCollider = gameObject.AddComponent<EdgeCollider2D>();
-        gameObject.layer = LayerMask.NameToLayer("CantDrawOver");
+        gameObject.layer = LayerMask.NameToLayer("Line");
         edgeCollider.edgeRadius =LineWidth / 2f;
         CircleColliderRaduis = LineWidth / 2f;
         UsePhysics(true);
