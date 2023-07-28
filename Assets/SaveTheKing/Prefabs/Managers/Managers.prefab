@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 3648243199455877190}
   - component: {fileID: 3648243199455877193}
   - component: {fileID: 3648243199455877192}
+  - component: {fileID: 6056032595249022056}
   m_Layer: 6
   m_Name: GameSceneManager
   m_TagString: Untagged
@@ -94,6 +95,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 406eff18d46058043ba08bc5c9ffd43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6056032595249022056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648243199455877191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7326406cdffd82c418d3f300fb3bff7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3648243199631134220
@@ -289,7 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 262275233512687036, guid: ee6dd88ca86508144b498025a3225797, type: 3}
       propertyPath: LineWidth
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 262275233512687036, guid: ee6dd88ca86508144b498025a3225797, type: 3}
       propertyPath: LineColor.key0.b

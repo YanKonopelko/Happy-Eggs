@@ -63,8 +63,10 @@ public class Line : MonoBehaviour
             
             newPoint = point;
         }
+
         
-        InkManager.inkAmount -= InkManager.currentPrice;
+        Debug.Log(InkManager.currentPrice*Time.unscaledDeltaTime);
+        InkManager.inkAmount -= InkManager.currentPrice*Time.unscaledDeltaTime;
 
         
         points.Add(newPoint);

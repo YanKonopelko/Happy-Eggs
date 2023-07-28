@@ -27,23 +27,28 @@ public class LevelManager : MonoBehaviour
     public void NextLevel()
     {
         TryToShowAd();
-        var lvl = PlayerPrefs.GetInt("LastLevel");
-        PlayerPrefs.SetInt("LastLevel",lvl);    
+        var lvl = YandexGame.savesData.LastLevel+1;
+        YandexGame.savesData.LastLevel = lvl;
+        YandexGame.SaveProgress();
         SceneManager.LoadScene(lvl%(SceneManager.sceneCountInBuildSettings-AnotherScenes)+AnotherScenes);
     }
 
     public void Reload()
     {
         TryToShowAd();
-        Debug.Log(SceneManager.sceneCountInBuildSettings); 
-        var lvl = PlayerPrefs.GetInt("LastLevel");
+
+        var lvl = YandexGame.savesData.LastLevel;
+        
         SceneManager.LoadScene(lvl%(SceneManager.sceneCountInBuildSettings-AnotherScenes)+AnotherScenes);
     }
 
     public void SkipLevel()
     {
-        var lvl = PlayerPrefs.GetInt("LastLevel")+1;
-        PlayerPrefs.SetInt("LastLevel",lvl);    
+        var lvl = YandexGame.savesData.LastLevel+1;
+        
+        YandexGame.savesData.LastLevel = lvl;
+        YandexGame.SaveProgress();
+        
         SceneManager.LoadScene(lvl%(SceneManager.sceneCountInBuildSettings-AnotherScenes)+AnotherScenes);
     }
 

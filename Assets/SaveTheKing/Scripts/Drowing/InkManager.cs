@@ -1,9 +1,9 @@
+using System;
 using UnityEngine;
 
 public class InkManager : MonoBehaviour
-{
-    static public float inkAmount = 10;
-    static public int currentColor = 0;
-    static public float currentPrice = 0.3f;
+{ 
+    public static float inkAmount = 5;
+    public static float currentPrice = 190f;
     
 }

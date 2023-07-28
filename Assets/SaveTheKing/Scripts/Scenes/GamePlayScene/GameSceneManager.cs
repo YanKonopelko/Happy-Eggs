@@ -47,7 +47,9 @@ public class GameSceneManager : MonoCache
     private void Win()
     {
         onGameEnd(true);
-        PlayerPrefs.SetInt("LastLevel",PlayerPrefs.GetInt("LastLevel")+1);    
+        var lvl = YandexGame.savesData.LastLevel+1;
+        YandexGame.savesData.LastLevel = lvl;
+        YandexGame.SaveProgress();
 
         SoundManager.Instance.PlaySound(SoundManager.SoundType.WinSound);
     }

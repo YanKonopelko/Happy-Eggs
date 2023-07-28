@@ -49,7 +49,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   LinePointsMinDistance: 0.2
-  LineWidth: 0.3
+  LineWidth: 0.42
   LineColor:
     serializedVersion: 2
     key0: {r: 0, g: 0.09019608, b: 0.12941177, a: 1}
